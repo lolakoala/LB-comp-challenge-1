@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Kenyan-Coffee;
+  src: url(Kenyan-Coffee.ttf.woff);
+}
+
+* {
+  box-sizing: border-box;;
+  font-family: Impact, sans-serif;
+  background-color: #898170;
+  color: #F7E6C3;
+}
+
+.color-1 {
+  background-color: #008E6B;
+}
+
+.color-2 {
+  background-color: #DB8700;
+}
+
+.color-3 {
+  background-color: #0A4490;
+}
+
+.color-4 {
+  background-color: #DB5100;
+}
+
+
+
+/*Wiki Button Link
+https://fontmeme.com/permalink/170713/479d6e40b29f9c9c44d84b412c2733b8.png*/
