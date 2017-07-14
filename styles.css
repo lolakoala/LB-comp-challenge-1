@@ -26,6 +26,41 @@
   background-color: #DB5100;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  height: 100%
+}
+
+.box-grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 673px;
+  width: 675px;
+}
+
+.title-box {
+  width: 450px;
+  height: 225px;
+}
+
+.grid {
+  height: 225px;
+  width: 225px;
+}
+
+.hero-image {
+  width: 448px;
+  height: 676px;
+  background-image: url("myazaki.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 /*Wiki Button Link
