@@ -5,30 +5,43 @@
 
 * {
   box-sizing: border-box;;
-  font-family: Impact, sans-serif;
-  background-color: #898170;
+  font-family: Helvetica, sans-serif;
+
   color: #F7E6C3;
 }
 
+button {
+  background-color: #20C5AE;
+  border: 2px solid #F7E6C3;
+  line-height: 30px;
+  padding: 5px;
+  width: 100px;
+}
+
+.imdb {
+  font-family: Kenyan Coffee;
+}
+
 .color-1 {
-  background-color: #008E6B;
+  background-color: #20C5AE;
 }
 
 .color-2 {
-  background-color: #DB8700;
+  background-color: #FFB82A;
 }
 
 .color-3 {
-  background-color: #0A4490;
+  background-color: #3361CB;
 }
 
 .color-4 {
-  background-color: #DB5100;
+  background-color: #FF822A;
 }
 
 body {
   display: flex;
   justify-content: center;
+  background-color: #898170;
 }
 
 section {
@@ -46,11 +59,16 @@ section {
 .title-box {
   width: 450px;
   height: 225px;
+  padding: 25px;
 }
 
 .grid {
   height: 225px;
   width: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image {
@@ -59,7 +77,27 @@ section {
   background-image: url("myazaki.jpg");
   background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.arrows {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+h1 {
+  font-size: 25px;
+margin: 15px 0px 15px 0px;
+}
+
+.title-copy {
+  display: block;
+  margin-bottom: 10px;
+}
+
 
 
 
