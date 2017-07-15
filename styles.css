@@ -74,7 +74,7 @@ section {
 .hero-image {
   width: 448px;
   height: 676px;
-  background-image: url("myazaki.jpg");
+  background-image: url("images/myazaki.jpg");
   background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -96,6 +96,12 @@ margin: 15px 0px 15px 0px;
 .title-copy {
   display: block;
   margin-bottom: 10px;
+}
+
+.icon {
+  border-radius: 100%;
+  filter: contrast(50%);
+
 }
 
 
