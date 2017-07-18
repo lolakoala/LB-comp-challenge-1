@@ -10,3 +10,6 @@ I felt the image was important to keep visible when breaking for mobile without 
 site, so I shrank it down quite a bit. 
 I made my icons by cropping an existing image, adjusting the border-radius, and adjusting the saturation to make them gray. 
 I really enjoyed this project! 
+
+![static-comp-1-screenshot](https://user-images.githubusercontent.com/29164755/28321523-adab5c24-6b90-11e7-8212-863588183c05.png)
+![static-comp-challenge-1-original-image](https://user-images.githubusercontent.com/29164755/28321531-b2d15c26-6b90-11e7-8cf7-076e418e1856.jpg)
