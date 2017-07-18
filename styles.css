@@ -4,16 +4,13 @@
   box-sizing: border-box;;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
-
-  /*color: #F7E6C3;*/
-
 }
 
 body {
-  display: flex;
-  justify-content: center;
   background-color: #898170;
+  display: flex;
   height: 100vh;
+  justify-content: center;
   padding-top: 2%;
 }
 
@@ -21,30 +18,22 @@ section {
   display: flex;
   height: 100%
 }
+
 button {
   background-color: #3361CB;
   border: 2px solid #F7E6C3;
+  bottom: 25px;
   height: 60px;
-  width: 125px;
   margin-right: 20px;
   margin-top: 10px;
   padding: 5px;
   position: absolute;
+  width: 125px;
 }
 
 button:hover {
   background-color: #20C5AE;
   cursor: pointer;
-}
-
-.imdb {
-  bottom: 25px;
-  left: 25px;
-}
-
-.wiki {
-  bottom: 25px;
-  left: 170px;
 }
 
 
@@ -57,7 +46,6 @@ h1 {
   margin: 15px 0px 15px 0px;
 }
 
-
 .box-grid {
   display: flex;
   flex-wrap: wrap;
@@ -66,88 +54,83 @@ h1 {
 }
 
 .title-box {
-  width: 450px;
   height: 225px;
   padding: 25px;
   position: relative;
+  width: 450px;
 }
+
 .title-copy {
   display: block;
   margin-bottom: 10px;
 }
-.color-1 {
+
+.imdb {
+  left: 25px;
+}
+
+.wiki {
+  left: 170px;
+}
+
+.color-1,
+.color-4:hover {
   background-color: #3361CB;
   color: #F7E6C3;
 }
 
-.special:hover {
-  background-color: #FF822A;
-}
-
-
-.color-2 {
+.color-2,
+.color-3:hover {
   background-color: #FFB82A;
   color: #3361CB;
 }
 
+.color-3,
 .color-2:hover {
   background-color: #20C5AE;
+  color: #3361CB;
 }
 
-.color-3 {
-  background-color: #20C5AE;
-color: #3361CB;
-}
-
-.color-3:hover {
-  background-color: #FFB82A;
-}
-
-.color-4 {
+.color-4,
+.special:hover {
   background-color: #FF822A;
   color: #F7E6C3;
 }
 
-.color-4:hover {
-  background-color: #3361CB;
-}
-
-
-
 .grid {
-  height: 225px;
-  width: 225px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 225px;
   justify-content: center;
+  width: 225px;
 }
+
 .icon {
   border-radius: 100%;
   filter: contrast(50%);
   height: 50px;
   margin: 0px 0px 15px 0px;
-
 }
 
 .hero-image {
-  width: 450px;
-  height: 675px;
   background-image: url("images/myazaki.jpg");
   background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    }
+  background-size: cover;
+  height: 675px;
+  position: relative;
+  width: 450px;
+}
 
 .dot-box {
   position: absolute;
-  top: 5px;
   right: 5px;
+  top: 5px;
 }
 
 .dots {
-  border-radius: 100%;
   border: 3px solid #FFB82A;
+  border-radius: 100%;
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -157,15 +140,13 @@ color: #3361CB;
   background-color: #FFB82A;
 }
 
-
-
 .arrow-buttons {
-  height: 50px;
-  width: 100%;
-  margin-top: 300px;
   display: flex;
+  height: 50px;
   justify-content: space-between;
+  margin-top: 300px;
   padding: 5px;
+  width: 100%;
 }
 
 .arrows {
@@ -180,117 +161,101 @@ color: #3361CB;
   cursor: pointer;
 }
 
-
-
-/*.left-arrow {
-  float: left;
-}
-
-.right-arrow {
-  float: right;
-}*/
-
-
-
-
-
 @media screen and (max-width: 1120px) {
-
-
-.box-grid {
-  width: 250px;
-}
-
-.title-box {
-  width: 250px;
-}
-  .grid {
-    width: 250px;
-    height: 64px;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 10px;
+  h1 {
+    margin: 10px 0px 10px 0px;
   }
 
   button {
-    width: 75px;
-    padding: 0px;
-    margin-top: 0px;
     height: 35px;
-  }
-
-.icon {
-  margin: 0px 10px 0px 10px;
-}
-
-.title-copy {
-  line-height: 20px;
-}
-
-h1 {
-  margin: 10px 0px 10px 0px;
-}
-
-.imdb {
-  bottom: 15px;
-  left: 25px;
-}
-
-.wiki {
-  bottom: 15px;
-  left: 120px;
-}
-
-}
-
-@media screen and (max-width: 700px) {
-
-section {
-  width: 320px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-
-}
-
-h1 {
-  font-size: 16px;
-}
-
-button {
-  width: 50px;
-
-}
-
-.imdb {
-  bottom: 15px;
-  left: 25px;
-}
-
-.wiki {
-  left: 90px;
-}
-
-.title-copy {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-  .hero-image {
-    width: 150px;
-    height: 225px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-top: 0px;
+    padding: 0px;
+    width: 75px;
   }
 
   .title-box {
-    width: 170px;
+    width: 250px;
+  }
+
+  .title-copy {
+    line-height: 20px;
+  }
+
+  .imdb {
+    bottom: 15px;
+    left: 25px;
+  }
+
+  .wiki {
+    bottom: 15px;
+    left: 120px;
+  }
+
+  .box-grid {
+    width: 250px;
+  }
+
+  .grid {
+    flex-direction: row;
+    height: 64px;
+    justify-content: flex-start;
+    padding-left: 10px;
+    width: 250px;
+  }
+
+  .icon {
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    justify-content: center;
+    position: relative;
+    width: 320px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  button {
+    width: 50px;
+  }
+
+  .box-grid {
+    width: 320px;
+  }
+
+  .title-box {
     padding: 10px;
+    width: 170px;
+  }
+
+  .title-copy {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .imdb {
+    bottom: 15px;
+    left: 25px;
+  }
+
+  .wiki {
+    left: 90px;
   }
 
   .grid {
     width: 100%;
+  }
+
+  .hero-image {
+    height: 225px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
   }
 
   .arrows {
@@ -298,14 +263,8 @@ button {
     width: 20px;
   }
 
-  .box-grid {
-    width: 320px;
-  }
-
   .arrow-buttons {
     margin-top: 100px;
     padding: 2px;
   }
-
-
 }
