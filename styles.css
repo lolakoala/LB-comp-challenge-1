@@ -1,58 +1,67 @@
-@font-face {
-  font-family: Kenyan-Coffee;
-  src: url(Kenyan-Coffee.ttf.woff);
-}
+
 
 * {
   box-sizing: border-box;;
-  font-family: Helvetica, sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
 
-  color: #F7E6C3;
-}
+  /*color: #F7E6C3;*/
 
-button {
-  background-color: #20C5AE;
-  border: 2px solid #F7E6C3;
-  line-height: 30px;
-  padding: 5px;
-  width: 100px;
-}
-
-.imdb {
-  font-family: Kenyan Coffee;
-}
-
-.color-1 {
-  background-color: #20C5AE;
-}
-
-.color-2 {
-  background-color: #FFB82A;
-}
-
-.color-3 {
-  background-color: #3361CB;
-}
-
-.color-4 {
-  background-color: #FF822A;
 }
 
 body {
   display: flex;
   justify-content: center;
   background-color: #898170;
+  height: 100vh;
+  padding-top: 2%;
 }
 
 section {
   display: flex;
   height: 100%
 }
+button {
+  background-color: #3361CB;
+  border: 2px solid #F7E6C3;
+  height: 60px;
+  width: 125px;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  position: absolute;
+}
+
+button:hover {
+  background-color: #20C5AE;
+  cursor: pointer;
+}
+
+.imdb {
+  bottom: 25px;
+  left: 25px;
+}
+
+.wiki {
+  bottom: 25px;
+  left: 170px;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 25px;
+  margin: 15px 0px 15px 0px;
+}
+
 
 .box-grid {
   display: flex;
   flex-wrap: wrap;
-  height: 673px;
+  height: 675px;
   width: 675px;
 }
 
@@ -60,7 +69,50 @@ section {
   width: 450px;
   height: 225px;
   padding: 25px;
+  position: relative;
 }
+.title-copy {
+  display: block;
+  margin-bottom: 10px;
+}
+.color-1 {
+  background-color: #3361CB;
+  color: #F7E6C3;
+}
+
+.special:hover {
+  background-color: #FF822A;
+}
+
+
+.color-2 {
+  background-color: #FFB82A;
+  color: #3361CB;
+}
+
+.color-2:hover {
+  background-color: #20C5AE;
+}
+
+.color-3 {
+  background-color: #20C5AE;
+color: #3361CB;
+}
+
+.color-3:hover {
+  background-color: #FFB82A;
+}
+
+.color-4 {
+  background-color: #FF822A;
+  color: #F7E6C3;
+}
+
+.color-4:hover {
+  background-color: #3361CB;
+}
+
+
 
 .grid {
   height: 225px;
@@ -70,16 +122,50 @@ section {
   align-items: center;
   justify-content: center;
 }
+.icon {
+  border-radius: 100%;
+  filter: contrast(50%);
+  height: 50px;
+  margin: 0px 0px 15px 0px;
+
+}
 
 .hero-image {
-  width: 448px;
-  height: 676px;
+  width: 450px;
+  height: 675px;
   background-image: url("images/myazaki.jpg");
   background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    }
+
+.dot-box {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.dots {
+  border-radius: 100%;
+  border: 3px solid #FFB82A;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+.dot-2 {
+  background-color: #FFB82A;
+}
+
+
+
+.arrow-buttons {
+  height: 50px;
+  width: 100%;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .arrows {
@@ -88,24 +174,138 @@ section {
   width: 50px;
 }
 
-h1 {
-  font-size: 25px;
-margin: 15px 0px 15px 0px;
+.arrows:hover,
+.dots:hover,
+.grid:hover {
+  cursor: pointer;
+}
+
+
+
+/*.left-arrow {
+  float: left;
+}
+
+.right-arrow {
+  float: right;
+}*/
+
+
+
+
+
+@media screen and (max-width: 1120px) {
+
+
+.box-grid {
+  width: 250px;
+}
+
+.title-box {
+  width: 250px;
+}
+  .grid {
+    width: 250px;
+    height: 64px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  button {
+    width: 75px;
+    padding: 0px;
+    margin-top: 0px;
+    height: 35px;
+  }
+
+.icon {
+  margin: 0px 10px 0px 10px;
 }
 
 .title-copy {
-  display: block;
+  line-height: 20px;
+}
+
+h1 {
+  margin: 10px 0px 10px 0px;
+}
+
+.imdb {
+  bottom: 15px;
+  left: 25px;
+}
+
+.wiki {
+  bottom: 15px;
+  left: 120px;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+
+section {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+
+h1 {
+  font-size: 16px;
+}
+
+button {
+  width: 50px;
+
+}
+
+.imdb {
+  bottom: 15px;
+  left: 25px;
+}
+
+.wiki {
+  left: 90px;
+}
+
+.title-copy {
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
-.icon {
-  border-radius: 100%;
-  filter: contrast(50%);
+  .hero-image {
+    width: 150px;
+    height: 225px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .title-box {
+    width: 170px;
+    padding: 10px;
+  }
+
+  .grid {
+    width: 100%;
+  }
+
+  .arrows {
+    height: 20px;
+    width: 20px;
+  }
+
+  .box-grid {
+    width: 320px;
+  }
+
+  .arrow-buttons {
+    margin-top: 100px;
+    padding: 2px;
+  }
+
 
 }
-
-
-
-
-/*Wiki Button Link
-https://fontmeme.com/permalink/170713/479d6e40b29f9c9c44d84b412c2733b8.png*/
